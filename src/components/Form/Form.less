@@ -1,0 +1,43 @@
+#id:invalid + #pId{
+    display: flex;
+    border-color: red !important;
+}
+input:valid {
+    border-color: green !important;
+}
+.inptEm:invalid + #pEmail{
+    border-color: red !important;
+    display: flex;
+}
+
+.inptEm:valid{
+    border-color: green !important;
+}
+#preco:invalid + #pPreco{
+    display: flex;
+    border-color: red !important;
+}
+.vazio{
+    border: 3px, solid, rgba(rgb(255, 0, 0), rgb(255, 0, 0), rgb(255, 6, 6));
+    opacity: 0.1;
+
+}
+.divInputs{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+}
+#nome:invalid + #pNome{
+    display: flex;
+    border-color: red !important;
+}
+#pNome, #pId, #pPreco, #pEmail{
+    display: none;
+    color: red;
+}
+label{
+    width: 30vw;
+}
